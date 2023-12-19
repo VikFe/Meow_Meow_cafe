@@ -26,3 +26,25 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
+
+// Стили для раздела "О нас"
+.about-us {
+  margin: 10px 10px 10px 10px;
+  color: $graphite;
+
+  &__title {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  &__list-item::before {
+    content: "✅️";
+  }
+  &__list-item {
+    margin-top: 5px;
+  }
+
+  &__text {
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}

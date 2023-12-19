@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Reset*/
 p {
   margin: 0;
@@ -24,3 +25,21 @@ ul {
 }
 
 /*Screen sizes*/
+.about-us {
+  margin: 10px 10px 10px 10px;
+  color: #262626;
+}
+.about-us__title {
+  font-size: 36px;
+  margin-top: 20px;
+}
+.about-us__list-item::before {
+  content: "✅️";
+}
+.about-us__list-item {
+  margin-top: 5px;
+}
+.about-us__text {
+  margin-top: 20px;
+  line-height: 20px;
+}
