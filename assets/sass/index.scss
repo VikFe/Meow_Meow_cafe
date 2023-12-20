@@ -26,25 +26,84 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
+body {
+  margin: 0;
+}
 
 // Стили для раздела "О нас"
 .about-us {
-  margin: 10px 10px 10px 10px;
+  // margin: 10px 10px 10px 10px;
+  // border: red solid;
   color: $graphite;
+  width: 100%;
+  background-color: #ffdfe0;
 
   &__title {
+    // border: red solid;
+    display: $df;
+    flex-direction: column;
+    align-items: center;
     font-size: 36px;
+  }
+  &__list {
+    display: $df;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    // border: red solid;
+  }
+  &__list-2 {
+    border: $fuchsia solid;
+    border-radius: 50px;
     margin-top: 20px;
+    font-size: 20px;
+    padding: 10px 25px 10px 25px;
+    background: rgb(255, 206, 206);
+    background: linear-gradient(
+      142deg,
+      rgba(255, 206, 206, 1) 6%,
+      rgba(255, 235, 235, 1) 28%,
+      rgba(237, 184, 184, 1) 52%,
+      rgba(223, 117, 159, 1) 92%
+    );
   }
   &__list-item::before {
     content: "✅️";
   }
   &__list-item {
-    margin-top: 5px;
+    margin: 5px 0px 10px 0px;
+    font-size: 20px;
   }
 
   &__text {
-    margin-top: 20px;
-    line-height: 20px;
+    // border: red solid;
+    line-height: 30px;
+    display: $df;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+}
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 25px;
+
+  &__block {
+    max-width: 300px;
+    height: 400px;
+    margin-bottom: 15px;
+  }
+  &__block:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  }
+  &__pic {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
   }
 }
