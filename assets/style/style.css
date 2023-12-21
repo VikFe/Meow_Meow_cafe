@@ -32,13 +32,17 @@ body {
 .about-us {
   color: #262626;
   width: 100%;
-  background-color: #ffdfe0;
+  background-image: url(/assets/images/Background/photo_background_15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #feb8b8;
 }
 .about-us__title {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 36px;
+  color: #feb8b8;
 }
 .about-us__list {
   display: flex;
@@ -47,13 +51,12 @@ body {
   align-items: center;
 }
 .about-us__list-2 {
-  border: #a7275a solid;
+  border: #a7275a solid 1px;
   border-radius: 50px;
   margin-top: 20px;
   font-size: 20px;
   padding: 10px 25px 10px 25px;
-  background: rgb(255, 206, 206);
-  background: linear-gradient(142deg, rgb(255, 206, 206) 6%, rgb(255, 235, 235) 28%, rgb(237, 184, 184) 52%, rgb(223, 117, 159) 92%);
+  background: rgba(255, 206, 206, 0.5);
 }
 .about-us__list-item::before {
   content: "✅️";
@@ -63,6 +66,7 @@ body {
   font-size: 20px;
 }
 .about-us__text {
+  border: red solid;
   line-height: 30px;
   display: flex;
   flex-direction: column;
