@@ -1,3 +1,5 @@
+// Шрифты
+
 /*Reset*/
 @import "reset";
 /*Box-sizing*/
@@ -26,3 +28,60 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
+
+// Стили для раздела Карты и контакты начало
+
+.contacts {
+  display: $df;
+  justify-content: center;
+}
+
+.contacts__list {
+  align-self: center;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $graphite;
+  padding-left: 40px;
+}
+
+.contact__text {
+  margin-block-end: 0.5em;
+}
+
+.contact__title {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+// Стили для раздела Карты и контакты конец
+
+// Стили для Footer начало
+.footer {
+  display: $df;
+  justify-content: space-around;
+  background-color: $green;
+  height: 8vw;
+  font-family: $main-font;
+  color: $graphite;
+}
+
+.block1 {
+  align-self: center;
+  height: 3vw;
+}
+
+.block2 {
+  align-self: flex-end;
+  padding-right: 15em;
+  padding-bottom: 10px;
+}
+
+.block3 {
+  align-self: center;
+}
+
+.block2__link {
+  text-decoration: none;
+  color: $graphite;
+}
+// Стили для Footer конец
