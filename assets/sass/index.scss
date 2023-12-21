@@ -1,3 +1,10 @@
+// Font
+@font-face {
+  font-family: "NexaRegular";
+  font-weight: 400;
+  src: url(../fonts/NexaRegular.woff) format("woff");
+}
+
 /*Reset*/
 @import "reset";
 /*Box-sizing*/
