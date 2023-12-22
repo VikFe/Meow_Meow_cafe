@@ -31,6 +31,8 @@ ul {
 
 /*Screen sizes*/
 
+/*Стили для header начало*/
+
 .header {
   background-color: #feb8b8;
   padding: 20px 0;
@@ -269,3 +271,24 @@ ul {
     font-size: 5vw;
   }
 }
+
+/*Стили для header конец*/
+
+/*Стили для информационного блока начало*/
+
+.info {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+.adult:hover+.hide {
+  display: block;
+  color: #a7275a;
+}
+
+/*Стили для информационного блока конец*/
