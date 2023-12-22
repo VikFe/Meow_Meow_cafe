@@ -33,12 +33,12 @@ ul {
   background-color: #ffdfe0;
 }
 
-h1 {
+.cats_header {
   text-align: center;
   background-color: #ffdfe0;
   font-family: "NexaRegular", sans-serif;
   color: #262626;
-  padding: 15px;
+  padding: 30px;
 }
 
 .carousel-item {
@@ -65,16 +65,27 @@ h1 {
 }
 
 .cats_text {
+  font-family: "NexaRegular", sans-serif;
   color: #262626;
   padding-top: 15px;
   padding: 20px;
   text-align: center;
+  font-size: 36px;
 }
 
-h1, h2 {
+.rules_header {
+  text-align: center;
+  color: #262626;
+  padding: 30px;
+  font-family: "NexaRegular", sans-serif;
+}
+
+.rules_header2 {
   text-align: center;
   color: #262626;
   padding: 15px;
+  font-family: "NexaRegular", sans-serif;
+  font-size: 36px;
 }
 
 .rules_list {
@@ -84,6 +95,7 @@ h1, h2 {
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .rules {
@@ -94,8 +106,11 @@ h1, h2 {
 li {
   text-align: center;
   padding: 5px;
+  font-family: "NexaRegular", sans-serif;
+  color: #262626;
+  font-size: 36px;
 }
 
 .rules_img {
-  width: 50px;
+  width: 65px;
 }/*# sourceMappingURL=index.css.map */

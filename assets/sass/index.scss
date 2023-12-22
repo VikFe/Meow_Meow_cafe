@@ -35,28 +35,27 @@ $tablet: 1149px;
 $mobile: 769px;
 
 
-$padding: 15px;
+
 
 .cats_images{
-    background-color: $light-pink;
+  background-color: $light-pink;
 }
 
 
-h1 {
-    text-align: center;
-    background-color: $light-pink;
-    font-family: $main-font;
-    color: $graphite;
-    padding: $padding;
+.cats_header {
+  text-align: center;
+  background-color: $light-pink;
+  font-family: $main-font;
+  color: $graphite;
+  padding: 30px;
 }
-
 
 
 .carousel-item {
-    text-align: center;
-    height: 500px;
-    display: flex;
-    align-items: center;
+  text-align: center;
+  height: 500px;
+  display: $df;
+  align-items: center;
 }
 
 .carousel-item img{
@@ -75,21 +74,34 @@ h1 {
 }
 
 .cats_text {
-    $main-font: "Montserrat Alternates", sans-serif;
-    color:$graphite;
-    padding-top: $padding;
-    padding: 20px;
-    text-align: center;
+  font-family: $main-font;
+  color:$graphite;
+  padding-top: 15px;
+  padding: 20px;
+  text-align: center;
+  font-size: $main-size;
 }
 
 @media screen and  (max-width: 767px) {
 
 }
 
-h1,h2{
+
+
+
+.rules_header{
   text-align: center;
   color: $graphite;
-  padding: $padding;
+  padding: 30px;
+  font-family: $main-font;
+}
+
+.rules_header2{
+  text-align: center;
+  color: $graphite;
+  padding: 15px;
+  font-family: $main-font;
+  font-size: $main-size;
 }
 
 
@@ -100,6 +112,7 @@ h1,h2{
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .rules{
@@ -110,9 +123,12 @@ color: $graphite;
 li{
   text-align: center;
   padding: 5px;
+  font-family: $main-font;
+  color: $graphite;
+  font-size: $main-size;
 }
 
 
 .rules_img{
-  width: 50px;
+  width: 65px;
 }
