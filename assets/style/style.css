@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'NexaRegular';
+  font-weight: 400;
+  src: url(/fonts/NexaRegular.woff) format("woff");
+}
 body {
   background-color: rgb(204, 97, 120);
+  font-family: 'NexaRegular' sans-serif;
 }
 
 .main {
