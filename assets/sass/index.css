@@ -106,11 +106,24 @@ body {
   color: #0F121F;
 }
 
+.form__surname {
+  padding: 20px 25px;
+  border-radius: 5px;
+  border: 1px solid #CAD3DB;
+  width: 431px;
+  font-size: 18px;
+  color: #0F121F;
+}
+
 .form__email:focus {
   outline: 1px solid #3D9FFF;
 }
 
 .form__name:focus {
+  outline: 1px solid #3D9FFF;
+}
+
+.form__surname:focus {
   outline: 1px solid #3D9FFF;
 }
 
