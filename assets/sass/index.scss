@@ -1,3 +1,10 @@
+// Font
+@font-face {
+  font-family: "NexaRegular";
+  font-weight: 400;
+  src: url(../fonts/NexaRegular.woff) format("woff");
+}
+
 /*Reset*/
 @import "reset";
 /*Box-sizing*/
@@ -48,34 +55,39 @@ $mobile: 769px;
 
 .contact__title {
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 17px;
+}
+
+.contact__phone {
+  text-decoration: none;
+  color: $graphite;
 }
 
 // Стили для раздела Карты и контакты конец
 
 // Стили для Footer начало
+
 .footer {
-  display: $df;
-  justify-content: space-around;
   background-color: $green;
-  height: 8vw;
+  height: 13vh;
+}
+
+.container {
+  display: $df;
+  justify-content: space-between;
+  padding: 20px;
   font-family: $main-font;
   color: $graphite;
 }
 
 .block1 {
-  align-self: center;
-  height: 3vw;
 }
 
 .block2 {
-  align-self: flex-end;
-  padding-right: 15em;
-  padding-bottom: 10px;
-}
-
-.block3 {
-  align-self: center;
+  display: $df;
+  justify-content: center;
+  align-content: flex-end;
+  font-family: $main-font;
 }
 
 .block2__link {
@@ -83,3 +95,43 @@ $mobile: 769px;
   color: $graphite;
 }
 // Стили для Footer конец
+
+// Адаптив к блоку карты
+
+@media (max-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contact__text {
+    font-size: 16px;
+  }
+
+  .contact__title {
+    font-size: 15px;
+  }
+
+  .contacts__map-yandex {
+    width: 100%;
+    height: 300px;
+  }
+  // Адаптив к блоку карты
+
+  // Адаптив к Footer
+  .footer {
+    height: 11vh;
+  }
+
+  @media (max-width: 375px) {
+    .footer {
+      height: 16vh;
+      font-size: 0.8em;
+    }
+  }
+}
