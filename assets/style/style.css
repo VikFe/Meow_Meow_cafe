@@ -81,6 +81,11 @@ ul {
   color: #262626;
 }
 
+@media (max-width: 1440px) {
+  .footer {
+    height: 15vh;
+  }
+}
 @media (max-width: 768px) {
   .contacts {
     display: flex;
@@ -101,12 +106,12 @@ ul {
     height: 300px;
   }
   .footer {
-    height: 11vh;
+    height: 14vh;
   }
 }
 @media (max-width: 768px) and (max-width: 375px) {
   .footer {
-    height: 16vh;
+    height: 18vh;
     font-size: 0.8em;
   }
 }
