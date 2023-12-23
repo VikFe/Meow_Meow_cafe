@@ -32,13 +32,14 @@ body {
 
 // Стили для раздела "О нас"
 .about-us {
-  // margin: 10px 10px 10px 10px;
   // border: red solid;
   color: $graphite;
   width: 100%;
-  background-image: url(/assets/images/Background/photo_background_15.jpg);
+  // height: auto;
+  background-image: url(/assets/images/Background/photo_background_15_1.JPG);
   background-repeat: no-repeat;
   background-position: center;
+  // background-size: 100%; //растянуть фото на всю ширину
   background-color: $pink;
 
   &__title {
@@ -57,51 +58,36 @@ body {
     // border: red solid;
   }
   &__list-2 {
-    border: $fuchsia solid 1px;
+    border: $fuchsia solid 2px;
     border-radius: 50px;
-    margin-top: 20px;
+    margin: 20px 0px 150px 0px; //отступы по фото вниз
     font-size: 20px;
     padding: 10px 25px 10px 25px;
-    background: rgb(255, 206, 206, 0.5);
+    background: rgb(255, 206, 206, 0.3);
   }
   &__list-item::before {
-    content: "✅️";
+    content: "✔";
   }
   &__list-item {
     margin: 5px 0px 10px 0px;
     font-size: 20px;
   }
+}
+
+.about-info {
+  // border: red solid 1px;
+  margin: 20px 0px 0px 0px;
+  padding-top: 15px;
+  display: $df;
+  flex-direction: column;
+  align-items: center;
+  background-color: $pink;
 
   &__text {
-    border: red solid;
+    // border: red solid 1px;
+    width: 790px;
     line-height: 30px;
-    display: $df;
-    flex-direction: column;
-    align-items: center;
     font-size: 20px;
-
-    padding-bottom: 25px;
-  }
-}
-.gallery-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 25px;
-
-  &__block {
-    max-width: 300px;
-    height: 400px;
-    margin-bottom: 15px;
-  }
-  &__block:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  }
-  &__pic {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-    max-width: 300px;
+    padding: 0px 10px 25px 10px;
   }
 }
