@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 @font-face {
 	font-family: "NexaRegular";
 	font-weight: 300;
-	src: url(/assets/fonts/NexaRegular.woff) format("woff");
+	src: url(/fonts/NexaRegular.woff) format("woff");
   }
 body{
     background-color:#ffdfe0;
@@ -159,7 +158,6 @@ body{
 	margin: 10px;
 	font-family: "NexaRegular";
 }
-=======
 // Font
 @font-face {
   font-family: "NexaRegular";
@@ -195,4 +193,3 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
->>>>>>> main
