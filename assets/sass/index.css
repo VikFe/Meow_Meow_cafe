@@ -67,10 +67,10 @@ ul {
 .cats_text {
   font-family: "NexaRegular", sans-serif;
   color: #262626;
-  padding-top: 15px;
-  padding: 20px;
+  padding-top: 30px;
+  padding: 50px;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_header {
@@ -85,7 +85,7 @@ ul {
   color: #262626;
   padding: 15px;
   font-family: "NexaRegular", sans-serif;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_list {
@@ -95,7 +95,7 @@ ul {
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .rules {
@@ -108,9 +108,19 @@ li {
   padding: 5px;
   font-family: "NexaRegular", sans-serif;
   color: #262626;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_img {
   width: 65px;
+}
+
+@media screen and (max-width: 769px) {
+  .cats_text {
+    font-size: small;
+    padding: 20px;
+  }
+  .li {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=index.css.map */

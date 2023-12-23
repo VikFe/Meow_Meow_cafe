@@ -27,7 +27,7 @@ $green: #98b08c;
 
 // Fonts
 $main-font: "NexaRegular", sans-serif;
-$main-size: 36px;
+$main-size: 20px;
 
 /*Screen sizes*/
 $big-display: 1920px;
@@ -76,14 +76,10 @@ $mobile: 769px;
 .cats_text {
   font-family: $main-font;
   color:$graphite;
-  padding-top: 15px;
-  padding: 20px;
+  padding-top: 30px;
+  padding: 50px;
   text-align: center;
   font-size: $main-size;
-}
-
-@media screen and  (max-width: 767px) {
-
 }
 
 
@@ -112,7 +108,7 @@ $mobile: 769px;
   padding: 10px;
   margin-left: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .rules{
@@ -128,7 +124,34 @@ li{
   font-size: $main-size;
 }
 
-
 .rules_img{
   width: 65px;
+}
+
+@media screen and  (max-width: $mobile) {
+  
+  .cats_text{
+    font-size: medium;
+    padding: 20px;
+  }
+
+  .carousel-item {
+    text-align: center;
+    height: 300px;
+    display: $df;
+    align-items: center;
+  }
+
+
+  .carousel-item img{
+    height: 300px;
+    text-align: center;
+    width: auto;
+    object-fit: contain;
+  }
+
+
+  li{
+    font-size: medium;
+  }
 }
