@@ -1,18 +1,6 @@
-
-@font-face {
-  font-family: 'NexaRegular';
-  font-weight: 400;
-  src: url(/fonts/NexaRegular.woff) format("woff");
-}
-body {
-  background-color: rgb(226, 193, 200);
-  font-family: 'NexaRegular' ;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/*Reset*/
+p {
+  margin: 0;
 }
 
 .reviews {
