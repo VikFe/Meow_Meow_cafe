@@ -1,4 +1,3 @@
-/*Reset*/
 p {
   margin: 0;
 }
@@ -16,11 +15,4 @@ ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-/*Box-sizing*/
-* {
-  box-sizing: border-box;
-}
-
-/*Screen sizes*//*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=reset.css.map */
