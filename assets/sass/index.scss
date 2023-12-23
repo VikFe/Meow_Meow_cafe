@@ -41,12 +41,13 @@ body {
 .about-us {
   // border: red solid;
   color: $graphite;
+  font-family: $main-font;
   width: 100%;
-  // height: auto;
+  height: 780px;
   background-image: url(/assets/images/Background/photo_background_15_1.JPG);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: 100%; //растянуть фото на всю ширину
+  background-size: 100%; //растянуть фото на всю ширину
   background-color: $pink;
 
   &__title {
@@ -56,20 +57,22 @@ body {
     align-items: center;
     font-size: 36px;
     color: $pink;
+    // margin-bottom: 30px;
   }
   &__list {
+    // border: red solid;
     display: $df;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    // border: red solid;
+    padding-top: 20px;
   }
   &__list-2 {
     border: $fuchsia solid 2px;
     border-radius: 50px;
-    margin: 20px 0px 150px 0px; //отступы по фото вниз
+    margin: 20px 0px 0px 0px; //отступы по фото вниз/вверх
     font-size: 20px;
-    padding: 10px 25px 10px 25px;
+    padding: 20px 20px 10px 20px;
     background: rgb(255, 206, 206, 0.3);
   }
   &__list-item::before {
@@ -83,7 +86,8 @@ body {
 
 .about-info {
   // border: red solid 1px;
-  margin: 20px 0px 0px 0px;
+  font-family: $main-font;
+  margin: 0px 0px 0px 0px;
   padding-top: 15px;
   display: $df;
   flex-direction: column;
