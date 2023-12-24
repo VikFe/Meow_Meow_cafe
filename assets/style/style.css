@@ -34,6 +34,169 @@ body {
   margin: 0;
 }
 
+/*Стили для header начало*/
+.header {
+  background-color: #feb8b8;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar__links a {
+  color: #262626;
+}
+
+.navbar__img {
+  width: 20vw;
+}
+
+.menu {
+  display: flex;
+  font-family: "NexaRegular", sans-serif;
+  font-size: 16px;
+}
+
+.menu li {
+  padding: 5px 25px;
+  text-transform: uppercase;
+}
+
+.menu li a {
+  text-decoration: none;
+  background: linear-gradient(#a7275a 0 0) 0 100%/var(--t, 0) 2px no-repeat;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #a7275a;
+  --t: 100%;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  background-color: #a7275a;
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 30px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+  background-color: #a7275a;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-line::before {
+  top: 7px;
+}
+
+.hamburger-line::after {
+  top: -7px;
+}
+
+@media (max-width: 768px) {
+  .navbar__img {
+    width: 40vw;
+  }
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: #ffdfe0;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-top: 60px;
+  }
+  .menu li a {
+    color: #a7275a;
+    display: block;
+    padding: 15px;
+  }
+  .hamburger {
+    display: block;
+    padding: 20px 0;
+  }
+  #checkbox_toggle:checked ~ .menu {
+    display: block;
+    max-height: 100%;
+    transition: all 0.5s;
+  }
+  .menu li {
+    transition: all 0.5s;
+  }
+  .menu li:hover {
+    background-color: #ffdfe0;
+  }
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+  }
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar__img {
+    width: 28vw;
+  }
+}
+@media (max-width: 430px) {
+  .navbar__img {
+    width: 40vw;
+  }
+}
+/*Стили для header конец*/
+/*Стили для информационного блока начало*/
+.info {
+  display: flex;
+  justify-content: center;
+  font-family: "NexaRegular", sans-serif;
+  color: #a7275a;
+}
+
+.info__list {
+  align-self: center;
+  line-height: 1.5;
+  font-family: "NexaRegular", sans-serif;
+  color: #262626;
+  padding-left: 40px;
+}
+
+.info__text {
+  margin-block-end: 0.5em;
+}
+
+.info__title {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+/*Стили информационного блока конец*/
 .about-us {
   color: #262626;
   font-family: "NexaRegular", sans-serif;
@@ -157,6 +320,12 @@ body {
     line-height: 30px;
     font-size: 16px;
     padding: 0px 10px 25px 10px;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    height: 20vh;
+    font-size: 0.8em;
   }
 }
 .price {
@@ -289,5 +458,91 @@ body {
     object-fit: cover;
     height: auto;
     width: 100%;
+  }
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__list {
+  align-self: center;
+  line-height: 1.5;
+  font-family: "NexaRegular", sans-serif;
+  color: #262626;
+  padding-left: 40px;
+}
+
+.contact__text {
+  margin-block-end: 0.5em;
+}
+
+.contact__title {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.contact__phone {
+  text-decoration: none;
+  color: #262626;
+}
+
+.footer {
+  background-color: #98b08c;
+  height: 16vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "NexaRegular", sans-serif;
+  color: #262626;
+}
+
+.block2 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  font-family: "NexaRegular", sans-serif;
+}
+
+.block2__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    height: 16vh;
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .contact__text {
+    font-size: 16px;
+  }
+  .contact__title {
+    font-size: 15px;
+  }
+  .contacts__map-yandex {
+    width: 100%;
+    height: 300px;
+  }
+  .footer {
+    height: 15vh;
+  }
+}
+@media (max-width: 768px) and (max-width: 375px) {
+  .footer {
+    height: 16vh;
+    font-size: 0.8em;
   }
 }

@@ -33,9 +33,186 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
+
 body {
   margin: 0;
 }
+/*Стили для header начало*/
+.header {
+  background-color: $pink;
+}
+
+.navbar {
+  display: $df;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar__links a {
+  color: $graphite;
+}
+
+.navbar__img {
+  width: 20vw;
+}
+
+.menu {
+  display: $df;
+  font-family: $main-font;
+  font-size: 16px;
+}
+
+.menu li {
+  padding: 5px 25px;
+  text-transform: uppercase;
+}
+
+.menu li a {
+  text-decoration: none;
+  background: linear-gradient($fuchsia 0 0) 0 100% / var(--t, 0) 2px no-repeat;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: $fuchsia;
+  --t: 100%;
+}
+
+#checkbox_toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  background-color: $fuchsia;
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 30px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+  background-color: $fuchsia;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-line::before {
+  top: 7px;
+}
+
+.hamburger-line::after {
+  top: -7px;
+}
+
+@media (max-width: 768px) {
+  .navbar__img {
+    width: 40vw;
+  }
+
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $light-pink;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-top: 60px;
+  }
+
+  .menu li a {
+    color: $fuchsia;
+    display: block;
+    padding: 15px;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 20px 0;
+  }
+
+  #checkbox_toggle:checked ~ .menu {
+    display: block;
+    max-height: 100%;
+    transition: all 0.5s;
+  }
+
+  .menu li {
+    transition: all 0.5s;
+  }
+
+  .menu li:hover {
+    background-color: $light-pink;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar__img {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar__img {
+    width: 40vw;
+  }
+}
+
+/*Стили для header конец*/
+
+/*Стили для информационного блока начало*/
+.info {
+  display: $df;
+  justify-content: center;
+  font-family: $main-font;
+  color: $fuchsia;
+}
+
+.info__list {
+  align-self: center;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $graphite;
+  padding-left: 40px;
+}
+
+.info__text {
+  margin-block-end: 0.5em;
+}
+
+.info__title {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+/*Стили информационного блока конец*/
 
 // Стили для раздела "О нас"
 .about-us {
@@ -181,6 +358,12 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .footer {
+    height: 20vh;
+    font-size: 0.8em;
+  }
+}
 //Стили для раздела "Прайс"
 .price {
   // border: red solid 1px;
@@ -315,6 +498,7 @@ body {
     flex-wrap: wrap;
     background-color: #feb8b8;
   }
+
   .gallery-container__pic-1,
   .gallery-container__pic-2,
   .gallery-container__pic-3,
@@ -325,5 +509,117 @@ body {
     height: auto;
     width: 100%;
     // max-width: 400px;
+  }
+}
+
+// Стили для раздела Карты и контакты начало
+
+.contacts {
+  display: $df;
+  justify-content: center;
+}
+
+.contacts__list {
+  align-self: center;
+  line-height: 1.5;
+  font-family: $main-font;
+  color: $graphite;
+  padding-left: 40px;
+}
+
+.contact__text {
+  margin-block-end: 0.5em;
+}
+
+.contact__title {
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.contact__phone {
+  text-decoration: none;
+  color: $graphite;
+}
+
+// Стили для раздела Карты и контакты конец
+
+// кнопка Вверх
+// .topNubex {
+//   position: fixed;
+//   right: 45px;
+//   padding-bottom: 2 0px;
+// }
+
+// Стили для Footer начало
+
+.footer {
+  background-color: $green;
+  height: 16vh;
+}
+
+.container {
+  display: $df;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: $main-font;
+  color: $graphite;
+}
+
+.block2 {
+  display: $df;
+  justify-content: center;
+  align-content: flex-end;
+
+  font-family: $main-font;
+}
+
+.block2__link {
+  text-decoration: none;
+  color: $graphite;
+}
+// Стили для Footer конец
+
+// Адаптив к блоку карты
+@media (max-width: 1440px) {
+  .footer {
+    height: 16vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts__list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .contact__text {
+    font-size: 16px;
+  }
+
+  .contact__title {
+    font-size: 15px;
+  }
+
+  .contacts__map-yandex {
+    width: 100%;
+    height: 300px;
+  }
+  // Адаптив к блоку карты
+
+  // Адаптив к Footer
+  .footer {
+    height: 15vh;
+  }
+
+  @media (max-width: 375px) {
+    .footer {
+      height: 16vh;
+      font-size: 0.8em;
+    }
   }
 }
