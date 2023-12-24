@@ -58,7 +58,7 @@ ul {
 
 .footer {
   background-color: #98b08c;
-  height: 13vh;
+  height: 16vh;
 }
 
 .container {
@@ -83,7 +83,7 @@ ul {
 
 @media (max-width: 1440px) {
   .footer {
-    height: 15vh;
+    height: 16vh;
   }
 }
 @media (max-width: 768px) {

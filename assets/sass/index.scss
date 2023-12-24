@@ -65,11 +65,18 @@ $mobile: 769px;
 
 // Стили для раздела Карты и контакты конец
 
+// кнопка Вверх
+// .topNubex {
+//   position: fixed;
+//   right: 45px;
+//   padding-bottom: 2 0px;
+// }
+
 // Стили для Footer начало
 
 .footer {
   background-color: $green;
-  height: 13vh;
+  height: 16vh;
 }
 
 .container {
@@ -97,7 +104,7 @@ $mobile: 769px;
 // Адаптив к блоку карты
 @media (max-width: 1440px) {
   .footer {
-    height: 15vh;
+    height: 16vh;
   }
 }
 
