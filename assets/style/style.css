@@ -106,12 +106,18 @@ ul {
     height: 300px;
   }
   .footer {
-    height: 14vh;
+    height: 15vh;
   }
 }
 @media (max-width: 768px) and (max-width: 375px) {
   .footer {
-    height: 18vh;
+    height: 16vh;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    height: 20vh;
     font-size: 0.8em;
   }
 }
