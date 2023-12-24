@@ -32,7 +32,9 @@ ul {
 }
 
 /*Screen sizes*/
-
+body {
+  margin: 0;
+}
 
 /*Стили для header начало*/
 .header {
@@ -201,30 +203,6 @@ ul {
   padding-left: 40px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.contact__text {
-  margin-block-end: 0.5em;
-}
-
-.contact__title {
 .info__text {
   margin-block-end: 0.5em;
 }
@@ -234,78 +212,9 @@ ul {
   font-size: 17px;
 }
 
-.contact__phone {
-  text-decoration: none;
-  color: #262626;
-}
-
-.footer {
-  background-color: #98b08c;
-  height: 16vh;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  font-family: "NexaRegular", sans-serif;
-  color: #262626;
-}
-
-.block2 {
-  display: flex;
-  justify-content: center;
-  align-content: flex-end;
-  font-family: "NexaRegular", sans-serif;
-}
-
-.block2__link {
-  text-decoration: none;
-  color: #262626;
-}
-
-@media (max-width: 1440px) {
-  .footer {
-    height: 16vh;
-  }
-}
-@media (max-width: 768px) {
-  .contacts {
-    display: flex;
-    flex-direction: column;
-  }
-  .contacts__list {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  .contact__text {
-    font-size: 16px;
-  }
-  .contact__title {
-    font-size: 15px;
-  }
-  .contacts__map-yandex {
-    width: 100%;
-    height: 300px;
-  }
-  .footer {
-    height: 15vh;
-  }
-}
-@media (max-width: 768px) and (max-width: 375px) {
-  .footer {
-    height: 16vh;
-    font-size: 0.8em;
-  }
-}
-@media (max-width: 320px) {
-  .footer {
-    height: 20vh;
-    font-size: 0.8em;
-  }
-}
 /*Стили информационного блока конец*/
 
+/* О нас начало */
 .about-us {
   color: #262626;
   font-family: "NexaRegular", sans-serif;
@@ -588,7 +497,7 @@ ul {
     flex-wrap: wrap;
     background-color: #feb8b8;
   }
-}
+
 
   .gallery-container__pic-1,
   .gallery-container__pic-2,
@@ -601,21 +510,103 @@ ul {
     width: 100%;
   }
 }
+/* О нас конец */
 
-
-
-
-
-
-
-
+/* карты и контакты */
 .contacts {
   display: flex;
   justify-content: center;
 }
 
 .contacts__list {
-body {
-  margin: 0;
+align-self: center;
+line-height: 1.5;
+font-family: "NexaRegular", sans-serif;
+color: #262626;
+padding-left: 40px;
+}
+
+.contact__text {
+  margin-block-end: 0.5em;
+}
+
+.contact__title { 
+  font-weight: bolder;
+  font-size: 17px;
+}
+
+.contact__phone {
+  text-decoration: none;
+  color: #262626;
+}
+/* Карты конец */
+
+/* Стили для Footer */
+
+.footer {
+  background-color: #98b08c;
+  height: 16vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "NexaRegular", sans-serif;
+  color: #262626;
+}
+
+.block2 {
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  font-family: "NexaRegular", sans-serif;
+}
+
+.block2__link {
+  text-decoration: none;
+  color: #262626;
+}
+
+@media (max-width: 1440px) {
+  .footer {
+    height: 16vh;
+  }
+}
+@media (max-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .contact__text {
+    font-size: 16px;
+  }
+  .contact__title {
+    font-size: 15px;
+  }
+  .contacts__map-yandex {
+    width: 100%;
+    height: 300px;
+  }
+  .footer {
+    height: 15vh;
+  }
+}
+@media (max-width: 768px) and (max-width: 375px) {
+  .footer {
+    height: 16vh;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 320px) {
+  .footer {
+    height: 20vh;
+    font-size: 0.8em;
+  }
 }
 }
+
