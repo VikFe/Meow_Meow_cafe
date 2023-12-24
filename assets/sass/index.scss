@@ -33,3 +33,297 @@ $main-size: 36px;
 $big-display: 1920px;
 $tablet: 1149px;
 $mobile: 769px;
+body {
+  margin: 0;
+}
+
+// Стили для раздела "О нас"
+.about-us {
+  // border: red solid;
+  color: $graphite;
+  font-family: $main-font;
+  width: 100%;
+  height: 1100px;
+  background-image: url(/assets/images/Background/photo_background_15_1.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; //растянуть фото на всю ширину
+  background-color: $pink;
+
+  &__title {
+    // border: red solid;
+    display: $df;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    color: $pink;
+    padding-top: 30px;
+  }
+  &__list {
+    // border: red solid;
+    display: $df;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  &__list-2 {
+    border: $light-pink solid 2px;
+    border-radius: 50px;
+    margin: 0px 0px 0px 0px; //отступы по фото вниз/вверх
+    font-size: 35px;
+    height: 550px;
+    padding: 30px 20px 20px 20px;
+    background: rgb(255, 206, 206, 0.5);
+  }
+  &__list-item::before {
+    content: "✔";
+  }
+  &__list-item {
+    margin: 5px 0px 10px 0px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: $tablet) {
+  .about-us {
+    // border: red solid;
+    width: 100%;
+    height: 100%;
+    background-size: 100%; //растянуть фото на всю ширину
+
+    &__title {
+      // border: red solid;
+      font-size: 36px;
+      padding-top: 10px;
+    }
+    &__list {
+      // border: red solid;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    &__list-2 {
+      margin: 0px 0px 0px 0px; //отступы по фото вниз/вверх
+      font-size: 20px;
+      max-height: 400px;
+      padding: 30px 20px 20px 20px;
+    }
+    &__list-item {
+      margin: 5px 0px 10px 0px;
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .about-us {
+    // border: red solid;
+    width: 100%;
+    height: 100%;
+    background-size: cover; //растянуть фото на всю ширину
+
+    &__title {
+      // border: red solid;
+      font-size: 30px;
+      color: $pink;
+      padding-top: 10px;
+    }
+    &__list {
+      // border: red solid;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    &__list-2 {
+      margin: 0px 0px 30px 0px; //отступы по фото вниз/вверх
+      font-size: 20px;
+      max-height: 450px;
+      padding: 30px 20px 20px 20px;
+    }
+    &__list-item {
+      margin: 5px 0px 10px 0px;
+      font-size: 15px;
+    }
+  }
+}
+.about-info {
+  // border: red solid 1px;
+  font-family: $main-font;
+  margin: 0px 0px 0px 0px;
+  padding-top: 15px;
+  display: $df;
+  flex-direction: column;
+  align-items: center;
+  background-color: $pink;
+
+  &__text {
+    // border: red solid 1px;
+    width: 790px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0px 10px 25px 10px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .about-info {
+    // border: red solid 1px;
+    margin: 0px 0px 0px 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink;
+
+    &__text {
+      // border: red solid 1px;
+      width: 790px;
+      line-height: 30px;
+      font-size: 16px;
+      padding: 0px 10px 25px 10px;
+    }
+  }
+}
+
+//Стили для раздела "Прайс"
+.price {
+  // border: red solid 1px;
+  background-color: $green;
+  font-family: $main-font;
+
+  &__title {
+    display: $df;
+    flex-direction: column;
+    align-items: center;
+    font-size: 36px;
+    color: $graphite;
+    padding-top: 15px;
+  }
+  &__info {
+    display: $df;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  &__catalog {
+    // border: $fuchsia solid 2px;
+    list-style-type: disc;
+    margin: 20px 0px 0px 0px; //отступы по фото вниз/вверх
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .price-container {
+    display: $df;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  &__info-text {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  &__info-text-1,
+  i {
+    line-height: 30px;
+    font-style: italic;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .price {
+    // border: red solid 1px;
+
+    &__title {
+      font-size: 30px;
+      padding-top: 15px;
+    }
+    &__info {
+      display: $df;
+      width: 100%;
+      padding: 5px 15px 0px 35px;
+    }
+    &__catalog {
+      // border: $fuchsia solid 2px;
+      margin: 10px 0px 0px 0px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+    &__info-text {
+      line-height: 30px;
+      font-size: 16px;
+    }
+    &__info-text-1,
+    i {
+      line-height: 35px;
+      font-style: italic;
+    }
+  }
+}
+
+//Стили для блока с фото
+.gallery-container {
+  display: $dg;
+  padding: 25px 0px 25px 0px;
+  grid-template-columns: 33% 30% 33%;
+  grid-template-rows: 200px 150px 200px 200px;
+  justify-content: space-evenly;
+  background-color: #feb8b8;
+  gap: 5px;
+
+  .gallery-container__pic-1,
+  .gallery-container__pic-2,
+  .gallery-container__pic-3,
+  .gallery-container__pic-4,
+  .gallery-container__pic-5,
+  .gallery-container__pic-6 {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+
+  .gallery-container__pic-1 {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 100%;
+  }
+  .gallery-container__pic-2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    height: 100%;
+  }
+  .gallery-container__pic-3 {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    height: 100%;
+  }
+  .gallery-container__pic-4 {
+    grid-column: 1/2;
+    grid-row: 4/6;
+    // height: auto;
+  }
+  .gallery-container__pic-5 {
+    grid-column: 2/3;
+    grid-row: 3/6;
+    height: 100%;
+  }
+  .gallery-container__pic-6 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .gallery-container {
+    display: $df;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #feb8b8;
+  }
+  .gallery-container__pic-1,
+  .gallery-container__pic-2,
+  .gallery-container__pic-3,
+  .gallery-container__pic-4,
+  .gallery-container__pic-5,
+  .gallery-container__pic-6 {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    // max-width: 400px;
+  }
+}
