@@ -84,7 +84,65 @@ body {
     font-size: 25px;
   }
 }
+@media screen and (max-width: $tablet) {
+  .about-us {
+    // border: red solid;
+    width: 100%;
+    height: 100%;
+    background-size: 100%; //растянуть фото на всю ширину
 
+    &__title {
+      // border: red solid;
+      font-size: 36px;
+      padding-top: 10px;
+    }
+    &__list {
+      // border: red solid;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    &__list-2 {
+      margin: 0px 0px 0px 0px; //отступы по фото вниз/вверх
+      font-size: 20px;
+      max-height: 400px;
+      padding: 30px 20px 20px 20px;
+    }
+    &__list-item {
+      margin: 5px 0px 10px 0px;
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: $mobile) {
+  .about-us {
+    // border: red solid;
+    width: 100%;
+    height: 100%;
+    background-size: cover; //растянуть фото на всю ширину
+
+    &__title {
+      // border: red solid;
+      font-size: 30px;
+      color: $pink;
+      padding-top: 10px;
+    }
+    &__list {
+      // border: red solid;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    &__list-2 {
+      margin: 0px 0px 30px 0px; //отступы по фото вниз/вверх
+      font-size: 20px;
+      max-height: 450px;
+      padding: 30px 20px 20px 20px;
+    }
+    &__list-item {
+      margin: 5px 0px 10px 0px;
+      font-size: 15px;
+    }
+  }
+}
 .about-info {
   // border: red solid 1px;
   font-family: $main-font;
@@ -103,6 +161,26 @@ body {
     padding: 0px 10px 25px 10px;
   }
 }
+
+@media screen and (max-width: $tablet) {
+  .about-info {
+    // border: red solid 1px;
+    margin: 0px 0px 0px 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink;
+
+    &__text {
+      // border: red solid 1px;
+      width: 790px;
+      line-height: 30px;
+      font-size: 16px;
+      padding: 0px 10px 25px 10px;
+    }
+  }
+}
+
 //Стили для раздела "Прайс"
 .price {
   // border: red solid 1px;
@@ -132,7 +210,6 @@ body {
   }
   .price-container {
     display: $df;
-    display: $df;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -147,6 +224,38 @@ body {
     font-style: italic;
   }
 }
+
+@media screen and (max-width: $mobile) {
+  .price {
+    // border: red solid 1px;
+
+    &__title {
+      font-size: 30px;
+      padding-top: 15px;
+    }
+    &__info {
+      display: $df;
+      width: 100%;
+      padding: 5px 15px 0px 35px;
+    }
+    &__catalog {
+      // border: $fuchsia solid 2px;
+      margin: 10px 0px 0px 0px;
+      font-size: 20px;
+      line-height: 35px;
+    }
+    &__info-text {
+      line-height: 30px;
+      font-size: 16px;
+    }
+    &__info-text-1,
+    i {
+      line-height: 35px;
+      font-style: italic;
+    }
+  }
+}
+
 //Стили для блока с фото
 .gallery-container {
   display: $dg;
@@ -157,10 +266,6 @@ body {
   background-color: #feb8b8;
   gap: 5px;
 
-  &__pic:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-  }
-
   .gallery-container__pic-1,
   .gallery-container__pic-2,
   .gallery-container__pic-3,
@@ -168,7 +273,7 @@ body {
   .gallery-container__pic-5,
   .gallery-container__pic-6 {
     object-fit: cover;
-    // height: auto;
+    height: auto;
     width: 100%;
   }
 
@@ -200,5 +305,25 @@ body {
   .gallery-container__pic-6 {
     grid-column: 3/4;
     grid-row: 4/6;
+  }
+}
+@media screen and (max-width: $mobile) {
+  .gallery-container {
+    display: $df;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #feb8b8;
+  }
+  .gallery-container__pic-1,
+  .gallery-container__pic-2,
+  .gallery-container__pic-3,
+  .gallery-container__pic-4,
+  .gallery-container__pic-5,
+  .gallery-container__pic-6 {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    // max-width: 400px;
   }
 }
