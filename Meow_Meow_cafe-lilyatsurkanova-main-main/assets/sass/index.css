@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "NexaRegular";
+  font-weight: 400;
+  src: url(../fonts/NexaRegular.woff) format("woff");
+}
+/*Reset*/
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+
+/*Screen sizes*/
+

@@ -1,0 +1,190 @@
+// Font
+@font-face {
+  font-family: "NexaRegular";
+  font-weight: 400;
+  src: url(../fonts/NexaRegular.woff) format("woff");
+}
+
+/*Reset*/
+@import "reset";
+/*Box-sizing*/
+* {
+  box-sizing: border-box;
+}
+// Display
+$dg: grid;
+$df: flex;
+
+// Colors
+$light-pink: #ffdfe0;
+$pink: #feb8b8;
+$black: #000;
+$white: #ffffff;
+$graphite: #262626;
+$fuchsia: #a7275a;
+$light-green: #dadeb9;
+$green: #98b08c;
+
+// Fonts
+$main-font: "NexaRegular", sans-serif;
+$main-size: 36px;
+
+/*Screen sizes*/
+$big-display: 1920px;
+$tablet: 1149px;
+$mobile: 769px;
+
+/*Стили для header начало*/
+.header {
+  background-color: $pink;
+}
+
+.navbar {
+  display: $df;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar__links a {
+  color: $graphite;
+}
+
+.navbar__img {
+  width: 20vw;
+}
+
+.menu {
+  display: $df;
+  font-family: $main-font;
+  font-size: 16px;
+}
+
+.menu li {
+  padding: 5px 25px;
+  text-transform: uppercase;
+}
+
+.menu li a {
+  text-decoration: none;
+  background: linear-gradient($fuchsia 0 0) 0 100% / var(--t, 0) 2px no-repeat;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: $fuchsia;
+  --t: 100%;
+}
+
+// стили для Бургер-меню начало
+
+#checkbox_toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  background-color: $fuchsia;
+  display: block;
+  height: 3px;
+  position: relative;
+  width: 30px;
+}
+
+.hamburger-line::before,
+.hamburger-line::after {
+  background-color: $fuchsia;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.hamburger-line::before {
+  top: 7px;
+}
+
+.hamburger-line::after {
+  top: -7px;
+}
+// стили для Бургер-меню конец
+/*Стили для header конец*/
+
+// Адаптив для-бургер меню
+@media (max-width: 768px) {
+  .navbar__img {
+    width: 40vw;
+  }
+
+  .menu {
+    // display: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $light-pink;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-top: 60px;
+  }
+
+  .menu li a {
+    color: $fuchsia;
+    display: block;
+    padding: 15px;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 20px 0;
+  }
+
+  #checkbox_toggle:checked ~ .menu {
+    display: block;
+    max-height: 100%;
+    transition: all 0.5s;
+  }
+
+  .menu li {
+    transition: all 0.5s;
+  }
+
+  .menu li:hover {
+    background-color: $pink;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar__img {
+    width: 28vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar__img {
+    width: 40vw;
+  }
+}
+// Адаптив для бургер меню конц
