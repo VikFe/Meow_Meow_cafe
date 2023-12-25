@@ -417,6 +417,7 @@ h1 {
     font-size: medium;
     padding: 20px;
   }
+<<<<<<< HEAD
   .carousel-item {
     text-align: center;
     height: 300px;
@@ -432,6 +433,10 @@ h1 {
   }
   .rul {
     font-size: medium;
+=======
+  .rul {
+    font-size: 2rem;
+>>>>>>> b9f06e7502ed99cadc9bb00d018dc36db485cde2
   }
 }
 .cats_images {
