@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review-Mail</title>
-    <link rel="stylesheet" href="/Meow_Meow_cafe/assets/sass/index.css">
-	<link rel="preload" href="/fonts/NexaRegular.woff" as="font">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Review-Mail</title>
+	<link rel="stylesheet" href="./assets/style/style.css">
+	<link rel="icon" href="./assets/images/paws-icon.png" type="image" />
+	<!-- <link rel="preload" href="/fonts/NexaRegular.woff" as="font"> -->
 </head>
+
 <body>
 
 	<!-- Header начало -->
@@ -121,68 +124,74 @@
 				alt="Фото интерьера">
 		</div>
 
-	</main> <!-- Main конец -->
-   <!-- Отзывы из яндекс -->
-   <main class="main">
-	<section class="reviews">
-		<div class="reviews_form">
-		<iframe src="https://yandex.ru/maps-reviews-widget/64554521707?comments"></iframe>
-		  </div>
-	
-	</section>
-	<!-- Подписка на новостную рассылку -->
-	<div class="subscribe">
-		<h2 class="subscribe__title">Новости от котиков</h2>
-		<p class="subscribe__copy">Если хотите первыми узнавать информацию, то подпишитесь на наши новости</p>
-		<div class="form">
-			<input type="surname" class="form__surname" placeholder="Фамилия" />
-			<input type="name" class="form__name" placeholder="Имя" />
-			<input type="email" class="form__email" placeholder="Адрес электронной почты" />
-			<button class="form__button">Отправить</button>
-		</div>
-	   
-		<div class="notice">
-			<input type="checkbox">
-			<span class="notice__copy"> Я даю согласие на информационную рассылку, обработку и хранение персональных данных.</span>
-		</div>
-	</div>
+
+		<!-- Отзывы из яндекс -->
+		<section class="reviews">
+			<div class="reviews_form">
+				<iframe src="https://yandex.ru/maps-reviews-widget/64554521707?comments"></iframe>
+			</div>
+
+
+			<!-- Подписка на новостную рассылку -->
+			<div class="subscribe">
+				<h2 class="subscribe__title">Новости от котиков</h2>
+				<p class="subscribe__copy">Если хотите первыми узнавать информацию, то подпишитесь на наши новости</p>
+				<div class="form">
+					<input type="surname" class="form__surname" placeholder="Фамилия" />
+					<input type="name" class="form__name" placeholder="Имя" />
+					<input type="email" class="form__email" placeholder="Адрес электронной почты" />
+					<button class="form__button">Отправить</button>
+				</div>
+
+				<div class="notice">
+					<input type="checkbox">
+					<span class="notice__copy"> Я даю согласие на информационную рассылку, обработку и хранение
+						персональных
+						данных.</span>
+				</div>
+			</div>
+		</section>
+		<!-- Секция Карта и контакты начало -->
+		<section class="contacts">
+			<iframe class="contacts__map-yandex"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A1267fcde514edff821b30cd58c3878cc6103c35d43f926711e539ee97a011daf&amp;source=constructor"
+				width="50%" height="400" frameborder="0"></iframe>
+
+			<div class="contacts__list">
+				<p class="contact__text">
+					<span class="contact__title"> Адрес:</span>
+					г. Калининград, ул. Партизана Железняка, д. 3а (3 этаж)
+				</p>
+
+
+				<p class="contact__text">
+					<span class="contact__title">Телефон администратора:</span>
+					<a class="contact__phone" href="tel:+79114687656" target="_blank">+7 (911) 468-76-56</a>
+				</p>
+
+				<p class="contact__text">
+					<span class="contact__title">Телефон для сотрудничества:</span>
+					<a class="contact__phone" href="tel:+79123332570" target="_blank">+7 (912) 333-25-70</a>
+				</p>
+
+				<p class="contact__text">
+					<span class="contact__title">Режим работы:</span>
+				<p>Вторник-Воскресенье с 11:00 до 21:00</p>
+				<p>Чт-Пт - взрослые дни</p>
+				<p>Понедельник - САНИТАРНЫЙ ДЕНЬ</p>
+				</p>
+			</div>
+		</section>
 	</main>
-	<!-- Секция Карта и контакты начало -->
-	<section class="contacts">
-		<iframe class="contacts__map-yandex"
-			src="https://yandex.ru/map-widget/v1/?um=constructor%3A1267fcde514edff821b30cd58c3878cc6103c35d43f926711e539ee97a011daf&amp;source=constructor"
-			width="50%" height="400" frameborder="0"></iframe>
+	<!-- Main конец -->
 
-		<div class="contacts__list">
-			<p class="contact__text">
-				<span class="contact__title"> Адрес:</span>
-				г. Калининград, ул. Партизана Железняка, д. 3а (3 этаж)
-			</p>
-
-
-			<p class="contact__text">
-				<span class="contact__title">Телефон администратора:</span>
-				<a class="contact__phone" href="tel:+79114687656" target="_blank">+7 (911) 468-76-56</a>
-			</p>
-
-			<p class="contact__text">
-				<span class="contact__title">Телефон для сотрудничества:</span>
-				<a class="contact__phone" href="tel:+79123332570" target="_blank">+7 (912) 333-25-70</a>
-			</p>
-
-			<p class="contact__text">
-				<span class="contact__title">Режим работы:</span>
-			<p>Вторник-Воскресенье с 11:00 до 21:00</p>
-			<p>Чт-Пт - взрослые дни</p>
-			<p>Понедельник - САНИТАРНЫЙ ДЕНЬ</p>
-			</p>
-		</div>
-	</section>
 	<!-- Секция Карта и контакты конец -->
 
 	<!-- Кнопка вверх -->
 	<!-- <div style="height:3px"></div>
 	<a href="#" title="Вернуться к началу страницы" class="topNubex">Вверх</a> -->
+
+
 	<!-- Footer начало -->
 	<footer class="footer">
 
@@ -195,7 +204,7 @@
 				<a class="block3__telegram" target="_blank" href="https://www.instagram.com/maymaycafe_39/">
 					<img class="block3__icon" src="assets/images/icon_social/telegram_graf.png" alt="telegram"></a>
 			</div>
- 
+
 			<div class="block1">
 				<p class="block1__info">ИП Комарова Жанна Анатольевна</p>
 				<p class="block1__info">ИНН 180904696138</p>
@@ -212,4 +221,5 @@
 	<!-- Footer конец -->
 
 </body>
+
 </html>
