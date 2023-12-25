@@ -27,6 +27,7 @@ $green: #98b08c;
 // Fonts
 $main-font: "NexaRegular", sans-serif;
 $main-size: 36px;
+$padding: 1vh;
 
 /*Screen sizes*/
 $big-display: 1920px;
@@ -502,6 +503,187 @@ body {
     height: auto;
     width: 100%;
     // max-width: 400px;
+  }
+}
+
+.certificate {
+  display: $df;
+  background-color: $light-pink;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 3vh;
+}
+
+.certificate__title {
+  padding: $padding;
+  font-family: $main-font;
+  font-size: $main-size;
+  color: $graphite;
+}
+
+.certificate__text {
+  font-family: $main-font;
+  padding-top: 3vh;
+  color: $graphite;
+}
+
+.certificate__img {
+  display: $df;
+  justify-content: center;
+  width: 100%;
+}
+
+.certificate__img_size {
+  display: $df;
+  width: 30vw;
+  max-width: 100%;
+  padding: 5vh;
+}
+
+.shelters {
+  border: 3px solid $light-green;
+  border-radius: 30px;
+  border-width: thick;
+  padding: 5vh 5vw;
+  margin: 1vh 5vw;
+  text-align: center;
+  font-family: $main-font;
+  padding: 0vw;
+}
+
+.shelters__title {
+  color: $graphite;
+  font-family: $main-font;
+  padding: 2vh;
+  font-size: $main-size;
+}
+
+.shelters__text {
+  font-family: $main-font;
+  padding: 1vh;
+}
+
+.shelters__ul_item {
+  padding: $padding;
+}
+
+.shelters__ul_item_set {
+  color: $pink;
+  padding: $padding;
+  font-weight: bolder;
+}
+
+.shelters__subtitle {
+  font-family: $main-font;
+  color: $graphite;
+  padding-top: 5vh;
+}
+
+.shelters__ul_item_paws {
+  width: 50px;
+}
+
+// адаптив для таблетки
+@media screen and (min-width: 768px) and (max-width: 1149px) {
+  .certificate__title {
+    font-size: 1.8em;
+    color: $graphite;
+  }
+
+  .certificate__text {
+    font-size: 0.8em;
+    padding: 1vh;
+  }
+
+  .certificate__img_size {
+    width: 50%;
+    max-width: 100%;
+  }
+
+  //   блок 8 адаптив
+
+  .shelters__title {
+    color: $graphite;
+    padding: 2vh;
+    font-size: 1.8em;
+  }
+
+  .shelters__text {
+    font-size: 0.8em;
+    padding: 1vh;
+  }
+
+  .shelters__ul_item_set {
+    padding: 1vh;
+    font-size: 0.9em;
+    font-weight: bolder;
+  }
+
+  .shelters__subtitle {
+    color: $graphite;
+    padding-top: 5vh;
+  }
+
+  .shelters__ul_item {
+    font-size: 0.8em;
+  }
+  .shelters__ul_item_paws {
+    width: 20px;
+    padding: 0vh;
+  }
+}
+
+// адаптив для смартфона
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .certificate__title {
+    font-size: 1.5em;
+    color: $graphite;
+  }
+
+  .certificate__text {
+    font-size: 0.8em;
+    padding: 1vh;
+    color: $graphite;
+  }
+
+  .certificate__img_size {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1vh;
+  }
+
+  //   блок 8 адаптив
+
+  .shelters__title {
+    color: $graphite;
+    padding: 2vh;
+    font-size: 1.8em;
+  }
+
+  .shelters__text {
+    font-size: 0.8em;
+    padding: 1vh;
+  }
+
+  .shelters__ul_item_set {
+    padding: 1vh;
+    font-size: 0.9em;
+    font-weight: bolder;
+  }
+
+  .shelters__subtitle {
+    color: $graphite;
+    padding-top: 5vh;
+  }
+
+  .shelters__ul_item {
+    font-size: 0.8em;
+  }
+
+  .shelters__ul_item_paws {
+    width: 20px;
+    padding: 0vh;
   }
 }
 

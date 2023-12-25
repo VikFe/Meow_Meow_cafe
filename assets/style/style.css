@@ -454,8 +454,6 @@ body {
     width: 100%;
   }
 }
-
-certificates-7-aside
 .certificate {
   display: flex;
   background-color: #ffdfe0;
@@ -573,7 +571,6 @@ certificates-7-aside
     padding: 0vh;
   }
 }
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .certificate__title {
     font-size: 1.5em;
@@ -613,8 +610,8 @@ certificates-7-aside
   .shelters__ul_item_paws {
     width: 20px;
     padding: 0vh;
-
-
+  }
+}
 .reviews {
   display: flex;
   justify-content: center;
@@ -848,7 +845,6 @@ certificates-7-aside
     height: 15vh;
   }
 }
-    
 @media (max-width: 768px) and (max-width: 375px) {
   .footer {
     height: 16vh;
@@ -859,6 +855,5 @@ certificates-7-aside
   .footer {
     height: 20vh;
     font-size: 0.8em;
- }
+  }
 }
-
