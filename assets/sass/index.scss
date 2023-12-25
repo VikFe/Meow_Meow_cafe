@@ -56,7 +56,7 @@ body {
 }
 
 .navbar__img {
-  width: 20vw;
+  max-width: 150px;
 }
 
 .menu {
@@ -65,18 +65,18 @@ body {
   font-size: 16px;
 }
 
-.menu li {
+.menu .menu__list {
   padding: 5px 25px;
   text-transform: uppercase;
 }
 
-.menu li a {
+.menu .menu__list a {
   text-decoration: none;
   background: linear-gradient($fuchsia 0 0) 0 100% / var(--t, 0) 2px no-repeat;
   transition: 0.3s;
 }
 
-.menu li a:hover {
+.menu .menu__list a:hover {
   color: $fuchsia;
   --t: 100%;
 }
@@ -134,7 +134,7 @@ body {
     margin-top: 60px;
   }
 
-  .menu li a {
+  .menu .menu__list a {
     color: $fuchsia;
     display: block;
     padding: 15px;
@@ -151,11 +151,11 @@ body {
     transition: all 0.5s;
   }
 
-  .menu li {
+  .menu .menu__list {
     transition: all 0.5s;
   }
 
-  .menu li:hover {
+  .menu .menu__list:hover {
     background-color: $light-pink;
   }
 
@@ -226,7 +226,7 @@ h1 {
   font-family: $main-font;
   width: 100%;
   height: 1100px;
-  background-image: url(/assets/images/Background/photo_background_15_1.JPG);
+  background-image: url("../images/Background/photo_background_15_1.JPG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%; //растянуть фото на всю ширину

@@ -107,7 +107,7 @@ ul {
   color: #262626;
 }
 
-li {
+.rul {
   text-align: center;
   padding: 5px;
   font-family: "NexaRegular", sans-serif;
@@ -124,7 +124,7 @@ li {
     font-size: small;
     padding: 20px;
   }
-  .li {
+  .rul {
     font-size: 2rem;
   }
 }
