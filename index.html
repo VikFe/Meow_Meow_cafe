@@ -2,25 +2,95 @@
 <html lang="ru">
 
 <head>
+  
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
 	<link rel="icon" href="./assets/images/paws-icon.png" type="image" />
-	<title>Мяу Мяу кафе</title>
-</head>
+  <title>Мяу Мяу Кафе</title>
+
+  </head>
 
 <body>
 
 	<!-- Header начало -->
-	<header>
+	<header class="header">
 
+		<nav class="navbar">
+			<a href="#"><img class="navbar__img" src="./assets/images/Meow_logo.png" alt="logo" /></a>
+			<ul class="navbar__links">
+				<input type="checkbox" id="checkbox_toggle" />
+				<label class="hamburger" for="checkbox_toggle"><span class="hamburger-line"></span></label>
+				<div class="menu">
+					<li><a class="menu__item" href="#about">О нас</a></li>
+					<li><a class="menu__item" href="#cats">Наши МЯУжители</a></li>
+					<li><a class="menu__item" href="#rules">Правила</a></li>
+					<li><a class="menu__item" href="#price">Прайс</a></li>
+					<li><a class="menu__item" href="#certificate">Сертификаты</a></li>
+					<li><a class="menu__item" href="#partners">Приюты-партнеры</a></li>
+					<li><a class="menu__item" href="#reviews">Отзывы</a></li>
+					<li><a class="menu__item" href="#feedback">Обратная связь</a></li>
+					<li><a class="menu__item" href="#contacts">Контакты</a></li>
+				</div>
+			</ul>
+		</nav>
 	</header>
 	<!-- Header конец -->
 
-
 	<!-- Main начало -->
 	<main>
+    	<div class="info">
+			<h1>МЯУ МЯУ кафе</h1>
+		</div>
+
+		<div class="info__list">
+			<p class="info__text">
+				<span class="info__title"> Адрес:</span>
+				г. Калининград, ул. Партизана Железняка, д. 3а (3 этаж)
+			</p>
+
+			<p class="info__text">
+				<span class="info__title">Режим работы:</span>
+			<p>Работаем Вт-Вс с 11:00 до 21:00</p>
+			<span class="info__title">Чт-Пт - взрослые дни.</span>
+			<p>Дни посвященные гармонии и спокойствию. Дни, когда взрослый человек знает, что его отдых с котейками не
+				будет прерван плачем или криками. С детками с радостью принимаем во все остальные дни.</p>
+			</p>
+		</div>
+  
+
+=======
+	
+
+		<!-- Раздел "О нас" -->
+		<div class="about-us">
+			<h2 class="about-us__title">О нас</h2>
+			<div class="about-us__list">
+				<ul class="about-us__list-2">Мяу Мяу кафе - это:
+					<li class="about-us__list-item"> уютная домашняя атмосфера</li>
+					<li class="about-us__list-item"> обнимашки с котиками, ласка и мурлыканье пушистых МЯУЖИТЕЛЕЙ</li>
+					<li class="about-us__list-item"> яркая фотозона для классных фото с котиками</li>
+					<li class="about-us__list-item"> WI-FI</li>
+					<li class="about-us__list-item"> настольные игры</li>
+					<li class="about-us__list-item"> творческие мастер-классы</li>
+					<li class="about-us__list-item"> коллективные игры: Мафия, Шпион, Да-Нет</li>
+					<li class="about-us__list-item"> игры на приставке Xbox</li>
+					<li class="about-us__list-item"> пространство для вашего Дня Рождения</li>
+					<li class="about-us__list-item"> кототерапия</li>
+				</ul>
+			</div>
+		</div>
+		<div class="about-info">
+			<p class="about-info__text">
+				Мяу Мяу кафе - это то, чем можно удивить и порадовать одновременно! <br>
+				Это то, что дарит эмоции и умиротворение одновременно! <br>
+				Это то место, где можно безудержно веселиться, играть, участвовать в мастер-классах <br>
+				и в то же время получать релакс и расслабление!
+		</div>
+  
+  <!-- cats_and_rules начало--> 
+  
 		<section class="cats_images">
 			<h1 class="cats_header">Наши МЯУжители</h1>
 			<div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -77,13 +147,9 @@
 				Может именно здесь Вас ждёт ваше мурлыкающее счастье!</p>
 		</section>
 		
-			  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-			  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-			 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+			 
 
-
-
-			 <section class="rules">
+<section class="rules">
 				<h1 class="rules_header">Правила посещения</h1>
 					<div class="rules_list">
 					<h2 class="rules_header2">Правила общения с котиками:</h2>
@@ -96,16 +162,211 @@
 					</ul>
 					</div>
 				</section>
+  
+  <!-- cats_and_rules конец--> 
 
+		<!-- Раздел "Прайс" -->
+		<div class="price">
+			<h2 class="price__title">
+				Прайс
+			</h2>
+			<div class="price__info">
+				<ul class="price__catalog">
+					<li class="price__list-item">1-й час - <strong>350 ₽</strong>, с каждого гостя</li>
+					<li class="price__list-item"> 2-й час - <strong>250 ₽</strong>, с каждого гостя</li>
+					<li class="price__list-item"> 3-й час - <strong>100 ₽</strong>, с каждого гостя</li>
+					<li class="price__list-item"> Безлимит - <strong>700 ₽</strong>, без ограничения по времени</li>
+				</ul>
+				<p class="price__info-text-1">
+					(В стоимость входят чай и печеньки)
+				</p>
+				<div class="price-container">
+					<p class="price__info-text">
+						У нас можно покормить котиков Эксклюзивным мороженым - <strong>100 ₽</strong>
+
+					</p>
+					<p class="price__info-text">
+						Можно отпраздновать день рождения в нашем пространстве - <strong>1 800 ₽</strong>
+						час <br>
+					<p class="price__info-text-1">
+						(к Вашим услугам всё пространство, котики, микроволновая печь, холодильник)
+					</p>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- Блок с фото -->
+		<div class="gallery-container">
+			<img class="gallery-container__pic-1" src="./assets/images/Various/Various_1.jpg" alt="Фото интерьера">
+			<img class="gallery-container__pic-2" src="./assets/images/Various/Various_10.jpg" alt="Фото интерьера">
+			<img class="gallery-container__pic-3" src="./assets/images/Various/Various_7.jpg" alt="Фото интерьера">
+			<img class="gallery-container__pic-4" src="./assets/images/Various/Various_2.jpg" alt="Фото интерьера">
+			<img class="gallery-container__pic-5" src="./assets/images/Various/Various_11.jpg" alt="Фото интерьера">
+			<img class="gallery-container__pic-6" src="./assets/images/Background/photo_background_2-1.jpg"
+				alt="Фото интерьера">
+		</div>
+
+		<!-- блок 7 сертификат начало -->
+		<section class="certificate">
+			<h3 class="certificate__title">Котики для всех!</h3>
+			<p class="certificate__text">
+				Подарите родным и близким общение с пушистиками. Подарочный сертификат
+				на безлимитное посещение 700р.
+			</p>
+			<div class="certificate__img">
+				<img class="certificate__img_size" src="./assets/images/Certificate.jpg" alt="сертификат" />
+			</div>
+		</section>
+		<!-- блок 7 сертификат конец -->
+
+		<!-- блок 8 приюты-партнёры. Начало -->
+		<section class="shelters">
+			<h3 class="shelters__title">Приюты:</h3>
+			<p class="shelters__text">
+				В атмосфере уюта, заботы и тепла наши котики живут лишь благодаря
+				неравнодушным кураторам приютов.
+			</p>
+			<p class="shelters__text">
+				Мы сотрудничаем с 3 приютами в Калининграде:
+			</p>
+			<ul class="shelters__ul">
+				<li class="shelters__ul_item">
+					<span class="shelters__ul_item_set">1. Кошкин Дом</span>
+				</li>
+				<li class="shelters__ul_item">
+					<span class="shelters__ul_item_set">2. Наши. Приют Натальи Шиховой</span>
+				</li>
+				<li class="shelters__ul_item">
+					<span class="shelters__ul_item_set">3. 9 жизней</span>
+				</li>
+			</ul>
+			<p class="shelters__text">
+				Мы надеемся, что наша социальная миссия "Найти дом спасённым котикам"
+				осуществима благодаря гостям котокафе.
+			</p>
+			<h3 class="shelters__subtitle">У нас можно:</h3>
+			<ul class="shelters__ul">
+				<li class="shelters__ul_item">
+					<img class="shelters__ul_item_paws" src="./assets/images/item_icon.png" alt="item_icon.png" />
+					Усыновить котика, дать ему семью и любовь
+				</li>
+				<li class="shelters__ul_item">
+					<img class="shelters__ul_item_paws" src="./assets/images/item_icon.png" alt="item_icon.png" />
+					Стать постоянным гостем кафе, и общяясь с котиками, поддерживать
+					нашу миссию
+				</li>
+				<li class="shelters__ul_item">
+					<img class="shelters__ul_item_paws" src="./assets/images/item_icon.png" alt="item_icon.png" />
+					Поддержать проект Мяу Мяу кафе любой посильной помощью (например, Вы
+					фотограф, или блогер, или просто любитель котиков, приходите к нам в
+					гости и расскажите о нас всем, чем больше гостей в кафе, тем
+					вероятнее что котики будут жить в хороших условиях и обретут дом)
+				</li>
+				<li class="shelters__ul_item">
+					<img class="shelters__ul_item_paws" src="./assets/images/item_icon.png" alt="item_icon.png" />
+					Поддержать котиков материально, любая сумма пожертвований улучшает
+					жизнь котиков
+				</li>
+			</ul>
+		</section>
+
+		<!-- Отзывы из яндекс -->
+		<section class="reviews">
+			<div class="reviews_form">
+				<iframe src="https://yandex.ru/maps-reviews-widget/64554521707?comments"></iframe>
+			</div>
+
+
+			<!-- Подписка на новостную рассылку -->
+			<div class="subscribe">
+				<h2 class="subscribe__title">Новости от котиков</h2>
+				<p class="subscribe__copy">Если хотите первыми узнавать информацию, то подпишитесь на наши новости</p>
+				<div class="form">
+					<input type="surname" class="form__surname" placeholder="Фамилия" />
+					<input type="name" class="form__name" placeholder="Имя" />
+					<input type="email" class="form__email" placeholder="Адрес электронной почты" />
+					<button class="form__button">Отправить</button>
+				</div>
+
+				<div class="notice">
+					<input type="checkbox">
+					<span class="notice__copy"> Я даю согласие на информационную рассылку, обработку и хранение
+						персональных
+						данных.</span>
+				</div>
+			</div>
+		</section>
+		<!-- Секция Карта и контакты начало -->
+		<section class="contacts">
+			<iframe class="contacts__map-yandex"
+				src="https://yandex.ru/map-widget/v1/?um=constructor%3A1267fcde514edff821b30cd58c3878cc6103c35d43f926711e539ee97a011daf&amp;source=constructor"
+				width="50%" height="400" frameborder="0"></iframe>
+
+			<div class="contacts__list">
+				<p class="contact__text">
+					<span class="contact__title"> Адрес:</span>
+					г. Калининград, ул. Партизана Железняка, д. 3а (3 этаж)
+				</p>
+          
+        <p class="contact__text">
+					<span class="contact__title">Телефон администратора:</span>
+					<a class="contact__phone" href="tel:+79114687656" target="_blank">+7 (911) 468-76-56</a>
+				</p>
+
+				<p class="contact__text">
+					<span class="contact__title">Телефон для сотрудничества:</span>
+					<a class="contact__phone" href="tel:+79123332570" target="_blank">+7 (912) 333-25-70</a>
+				</p>
+
+				<p class="contact__text">
+					<span class="contact__title">Режим работы:</span>
+				<p>Вторник-Воскресенье с 11:00 до 21:00</p>
+				<p>Чт-Пт - взрослые дни</p>
+				<p>Понедельник - САНИТАРНЫЙ ДЕНЬ</p>
+				</p>
+			</div>
+		</section>
 	</main>
 	<!-- Main конец -->
 
+	<!-- Секция Карта и контакты конец -->
+
+	<!-- Кнопка вверх -->
+	<!-- <div style="height:3px"></div>
+	<a href="#" title="Вернуться к началу страницы" class="topNubex">Вверх</a> -->
+
 
 	<!-- Footer начало -->
-	<footer>
+	<footer class="footer">
+
+		<div class="container">
+
+			<div class="block3">
+				<a class="block3__vk" target="_blank" href="https://vk.com/maymaycafe39">
+					<img class="block3__icon" src="assets/images/icon_social/vk_graf.png" alt="vk"></a>
+
+				<a class="block3__telegram" target="_blank" href="https://www.instagram.com/maymaycafe_39/">
+					<img class="block3__icon" src="assets/images/icon_social/telegram_graf.png" alt="telegram"></a>
+			</div>
+
+			<div class="block1">
+				<p class="block1__info">ИП Комарова Жанна Анатольевна</p>
+				<p class="block1__info">ИНН 180904696138</p>
+				<p class="block1__info">ОГРН 323430000033109</p>
+			</div>
+		</div>
+
+		<div class="block2">
+			<a class="block2__link" href="https://itgirlschool.com/" target="_blank">Создано командой учениц
+				школы ITGIRLS</a>
+		</div>
 
 	</footer>
-	<!-- Footer начало -->
+	<!-- Footer конец -->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+			  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+			 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 
 </html>

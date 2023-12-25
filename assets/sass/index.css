@@ -1,8 +1,10 @@
+
 @font-face {
   font-family: "NexaRegular";
   font-weight: 400;
   src: url(../fonts/NexaRegular.woff) format("woff");
 }
+
 /*Reset*/
 p {
   margin: 0;
@@ -29,6 +31,9 @@ ul {
 }
 
 /*Screen sizes*/
+
+/*cats_and_rules*/
+
 .cats_images {
   background-color: #ffdfe0;
 }
@@ -123,4 +128,7 @@ li {
   .li {
     font-size: 2rem;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*Screen sizes*//*# sourceMappingURL=index.css.map */
+
