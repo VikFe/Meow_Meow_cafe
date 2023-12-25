@@ -179,6 +179,10 @@ body {
   color: #a7275a;
 }
 
+h1 {
+  font-family: "NexaRegular", sans-serif;
+}
+
 .info__list {
   align-self: center;
   line-height: 1.5;
@@ -395,7 +399,7 @@ body {
   color: #262626;
 }
 
-li {
+.rul {
   text-align: center;
   padding: 5px;
   font-family: "NexaRegular", sans-serif;
@@ -424,7 +428,7 @@ li {
     width: auto;
     object-fit: contain;
   }
-  li {
+  .rul {
     font-size: medium;
   }
 }
@@ -501,7 +505,7 @@ li {
   color: #262626;
 }
 
-li {
+.rul {
   text-align: center;
   padding: 5px;
   font-family: "NexaRegular", sans-serif;
@@ -530,7 +534,7 @@ li {
     width: auto;
     object-fit: contain;
   }
-  li {
+  .rul {
     font-size: medium;
   }
 }

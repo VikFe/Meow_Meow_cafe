@@ -26,11 +26,9 @@ $green: #98b08c;
 
 // Fonts
 $main-font: "NexaRegular", sans-serif;
-
 $main-size: 20px;
 $main-size: 36px;
 $padding: 1vh;
-
 
 /*Screen sizes*/
 $big-display: 1920px;
@@ -196,6 +194,9 @@ body {
   justify-content: center;
   font-family: $main-font;
   color: $fuchsia;
+}
+h1 {
+  font-family: $main-font;
 }
 
 .info__list {
@@ -363,10 +364,9 @@ body {
 }
 
 // Стили для галереи и правил поведения
-.cats_images{
+.cats_images {
   background-color: $light-pink;
 }
-
 
 .cats_header {
   text-align: center;
@@ -376,7 +376,6 @@ body {
   padding: 30px;
 }
 
-
 .carousel-item {
   text-align: center;
   height: 500px;
@@ -384,38 +383,38 @@ body {
   align-items: center;
 }
 
-.carousel-item img{
-    text-align: center;
-    height: 500px;
-    width: auto;
-    object-fit: contain;
+.carousel-item img {
+  text-align: center;
+  height: 500px;
+  width: auto;
+  object-fit: contain;
 }
 
-.carousel-control-prev-icon{
-    background-color: $graphite;
+.carousel-control-prev-icon {
+  background-color: $graphite;
 }
 
-.carousel-control-next-icon{
-    background-color: $graphite;
+.carousel-control-next-icon {
+  background-color: $graphite;
 }
 
 .cats_text {
   font-family: $main-font;
-  color:$graphite;
+  color: $graphite;
   padding-top: 30px;
   padding: 50px;
   text-align: center;
   font-size: $main-size;
 }
 
-.rules_header{
+.rules_header {
   text-align: center;
   color: $graphite;
   padding: 30px;
   font-family: $main-font;
 }
 
-.rules_header2{
+.rules_header2 {
   text-align: center;
   color: $graphite;
   padding: 15px;
@@ -423,8 +422,7 @@ body {
   font-size: $main-size;
 }
 
-
-.rules_list{
+.rules_list {
   border: 3px solid $light-green;
   border-radius: 30px;
   border-width: thick;
@@ -434,12 +432,12 @@ body {
   margin-bottom: 25px;
 }
 
-.rules{
-background-color: $white;
-color: $graphite;
+.rules {
+  background-color: $white;
+  color: $graphite;
 }
 
-li{
+.rul {
   text-align: center;
   padding: 5px;
   font-family: $main-font;
@@ -447,13 +445,12 @@ li{
   font-size: $main-size;
 }
 
-.rules_img{
+.rules_img {
   width: 65px;
 }
 
-@media screen and  (max-width: $mobile) {
-  
-  .cats_text{
+@media screen and (max-width: $mobile) {
+  .cats_text {
     font-size: medium;
     padding: 20px;
   }
@@ -465,24 +462,21 @@ li{
     align-items: center;
   }
 
-
-  .carousel-item img{
+  .carousel-item img {
     height: 300px;
     text-align: center;
     width: auto;
     object-fit: contain;
   }
 
-
-  li{
+  .rul {
     font-size: medium;
   }
 }
 
-.cats_images{
+.cats_images {
   background-color: $light-pink;
 }
-
 
 .cats_header {
   text-align: center;
@@ -492,7 +486,6 @@ li{
   padding: 30px;
 }
 
-
 .carousel-item {
   text-align: center;
   height: 500px;
@@ -500,38 +493,38 @@ li{
   align-items: center;
 }
 
-.carousel-item img{
-    text-align: center;
-    height: 500px;
-    width: auto;
-    object-fit: contain;
+.carousel-item img {
+  text-align: center;
+  height: 500px;
+  width: auto;
+  object-fit: contain;
 }
 
-.carousel-control-prev-icon{
-    background-color: $graphite;
+.carousel-control-prev-icon {
+  background-color: $graphite;
 }
 
-.carousel-control-next-icon{
-    background-color: $graphite;
+.carousel-control-next-icon {
+  background-color: $graphite;
 }
 
 .cats_text {
   font-family: $main-font;
-  color:$graphite;
+  color: $graphite;
   padding-top: 30px;
   padding: 50px;
   text-align: center;
   font-size: $main-size;
 }
 
-.rules_header{
+.rules_header {
   text-align: center;
   color: $graphite;
   padding: 30px;
   font-family: $main-font;
 }
 
-.rules_header2{
+.rules_header2 {
   text-align: center;
   color: $graphite;
   padding: 15px;
@@ -539,8 +532,7 @@ li{
   font-size: $main-size;
 }
 
-
-.rules_list{
+.rules_list {
   border: 3px solid $light-green;
   border-radius: 30px;
   border-width: thick;
@@ -550,12 +542,12 @@ li{
   margin-bottom: 25px;
 }
 
-.rules{
-background-color: $white;
-color: $graphite;
+.rules {
+  background-color: $white;
+  color: $graphite;
 }
 
-li{
+.rul {
   text-align: center;
   padding: 5px;
   font-family: $main-font;
@@ -563,13 +555,12 @@ li{
   font-size: $main-size;
 }
 
-.rules_img{
+.rules_img {
   width: 65px;
 }
 
-@media screen and  (max-width: $mobile) {
-  
-  .cats_text{
+@media screen and (max-width: $mobile) {
+  .cats_text {
     font-size: medium;
     padding: 20px;
   }
@@ -581,16 +572,14 @@ li{
     align-items: center;
   }
 
-
-  .carousel-item img{
+  .carousel-item img {
     height: 300px;
     text-align: center;
     width: auto;
     object-fit: contain;
   }
 
-
-  li{
+  .rul {
     font-size: medium;
   }
 }
@@ -1206,4 +1195,3 @@ li{
   }
 }
 // // Адаптив к Footer конец
-
