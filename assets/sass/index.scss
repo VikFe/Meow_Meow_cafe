@@ -1,7 +1,7 @@
 @font-face {
   font-family: "NexaRegular";
   font-weight: 150;
-  src: url(/Meow_Meow_cafe/fonts/NexaRegular.woff) format("woff");
+  src: url(../fonts/NexaRegular.woff) format("woff");
 }
 
 /*Reset*/
@@ -56,7 +56,7 @@ body {
 }
 
 .navbar__img {
-  max-width: 150px;
+  width: 20vw;
 }
 
 .menu {
@@ -1177,7 +1177,7 @@ h1 {
 
   // Адаптив к Footer
   .footer {
-    height: 15vh;
+    height: 16vh;
   }
 
   @media (max-width: 375px) {
