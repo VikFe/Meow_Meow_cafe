@@ -26,8 +26,11 @@ $green: #98b08c;
 
 // Fonts
 $main-font: "NexaRegular", sans-serif;
+
+$main-size: 20px;
 $main-size: 36px;
 $padding: 1vh;
+
 
 /*Screen sizes*/
 $big-display: 1920px;
@@ -215,6 +218,7 @@ body {
 /*Стили информационного блока конец*/
 
 // Стили для раздела "О нас"
+
 .about-us {
   // border: red solid;
   color: $graphite;
@@ -355,6 +359,239 @@ body {
       font-size: 16px;
       padding: 0px 10px 25px 10px;
     }
+  }
+}
+
+// Стили для галереи и правил поведения
+.cats_images{
+  background-color: $light-pink;
+}
+
+
+.cats_header {
+  text-align: center;
+  background-color: $light-pink;
+  font-family: $main-font;
+  color: $graphite;
+  padding: 30px;
+}
+
+
+.carousel-item {
+  text-align: center;
+  height: 500px;
+  display: $df;
+  align-items: center;
+}
+
+.carousel-item img{
+    text-align: center;
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon{
+    background-color: $graphite;
+}
+
+.carousel-control-next-icon{
+    background-color: $graphite;
+}
+
+.cats_text {
+  font-family: $main-font;
+  color:$graphite;
+  padding-top: 30px;
+  padding: 50px;
+  text-align: center;
+  font-size: $main-size;
+}
+
+.rules_header{
+  text-align: center;
+  color: $graphite;
+  padding: 30px;
+  font-family: $main-font;
+}
+
+.rules_header2{
+  text-align: center;
+  color: $graphite;
+  padding: 15px;
+  font-family: $main-font;
+  font-size: $main-size;
+}
+
+
+.rules_list{
+  border: 3px solid $light-green;
+  border-radius: 30px;
+  border-width: thick;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.rules{
+background-color: $white;
+color: $graphite;
+}
+
+li{
+  text-align: center;
+  padding: 5px;
+  font-family: $main-font;
+  color: $graphite;
+  font-size: $main-size;
+}
+
+.rules_img{
+  width: 65px;
+}
+
+@media screen and  (max-width: $mobile) {
+  
+  .cats_text{
+    font-size: medium;
+    padding: 20px;
+  }
+
+  .carousel-item {
+    text-align: center;
+    height: 300px;
+    display: $df;
+    align-items: center;
+  }
+
+
+  .carousel-item img{
+    height: 300px;
+    text-align: center;
+    width: auto;
+    object-fit: contain;
+  }
+
+
+  li{
+    font-size: medium;
+  }
+}
+
+.cats_images{
+  background-color: $light-pink;
+}
+
+
+.cats_header {
+  text-align: center;
+  background-color: $light-pink;
+  font-family: $main-font;
+  color: $graphite;
+  padding: 30px;
+}
+
+
+.carousel-item {
+  text-align: center;
+  height: 500px;
+  display: $df;
+  align-items: center;
+}
+
+.carousel-item img{
+    text-align: center;
+    height: 500px;
+    width: auto;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon{
+    background-color: $graphite;
+}
+
+.carousel-control-next-icon{
+    background-color: $graphite;
+}
+
+.cats_text {
+  font-family: $main-font;
+  color:$graphite;
+  padding-top: 30px;
+  padding: 50px;
+  text-align: center;
+  font-size: $main-size;
+}
+
+.rules_header{
+  text-align: center;
+  color: $graphite;
+  padding: 30px;
+  font-family: $main-font;
+}
+
+.rules_header2{
+  text-align: center;
+  color: $graphite;
+  padding: 15px;
+  font-family: $main-font;
+  font-size: $main-size;
+}
+
+
+.rules_list{
+  border: 3px solid $light-green;
+  border-radius: 30px;
+  border-width: thick;
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.rules{
+background-color: $white;
+color: $graphite;
+}
+
+li{
+  text-align: center;
+  padding: 5px;
+  font-family: $main-font;
+  color: $graphite;
+  font-size: $main-size;
+}
+
+.rules_img{
+  width: 65px;
+}
+
+@media screen and  (max-width: $mobile) {
+  
+  .cats_text{
+    font-size: medium;
+    padding: 20px;
+  }
+
+  .carousel-item {
+    text-align: center;
+    height: 300px;
+    display: $df;
+    align-items: center;
+  }
+
+
+  .carousel-item img{
+    height: 300px;
+    text-align: center;
+    width: auto;
+    object-fit: contain;
+  }
+
+
+  li{
+    font-size: medium;
   }
 }
 
@@ -969,3 +1206,4 @@ body {
   }
 }
 // // Адаптив к Footer конец
+
