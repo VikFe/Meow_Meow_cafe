@@ -1177,12 +1177,12 @@ h1 {
 
   // Адаптив к Footer
   .footer {
-    height: 16vh;
+    height: 18vh;
   }
 
   @media (max-width: 375px) {
     .footer {
-      height: 16vh;
+      height: 20vh;
       font-size: 0.8em;
     }
   }

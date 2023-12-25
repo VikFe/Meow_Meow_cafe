@@ -1058,12 +1058,12 @@ h1 {
     height: 300px;
   }
   .footer {
-    height: 16vh;
+    height: 18vh;
   }
 }
 @media (max-width: 768px) and (max-width: 375px) {
   .footer {
-    height: 16vh;
+    height: 20vh;
     font-size: 0.8em;
   }
 }
