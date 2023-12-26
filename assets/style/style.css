@@ -227,11 +227,17 @@ body {
   display: flex;
   justify-content: center;
   font-family: "NexaRegular", sans-serif;
-  color: #a7275a;
+  background-image: url("/assets/images/Background/info_background.jpeg");
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-h1 {
+.info__maintitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-family: "NexaRegular", sans-serif;
+  color: #a7275a;
 }
 
 .info__list {

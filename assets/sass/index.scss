@@ -255,10 +255,17 @@ body {
   display: $df;
   justify-content: center;
   font-family: $main-font;
-  color: $fuchsia;
+  background-image: url("/assets/images/Background/info_background.jpeg");
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-h1 {
+
+.info__maintitle {
+  display: $df;
+  flex-direction: row;
+  justify-content: center;
   font-family: $main-font;
+  color: $fuchsia;
 }
 
 .info__list {
