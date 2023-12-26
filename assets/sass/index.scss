@@ -131,13 +131,13 @@ body {
     text-align: center;
     right: 0;
     left: 0;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .menu .menu__list a {
     color: $fuchsia;
     display: block;
-    padding: 15px;
+    padding: 10px;
   }
 
   .hamburger {
@@ -147,7 +147,64 @@ body {
 
   #checkbox_toggle:checked ~ .menu {
     display: block;
-    max-height: 100%;
+    max-height: 700px;
+    transition: all 0.5s;
+  }
+
+  .menu .menu__list {
+    transition: all 0.5s;
+  }
+
+  .menu .menu__list:hover {
+    background-color: $light-pink;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line {
+    background-color: transparent;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::before {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  #checkbox_toggle:checked ~ .hamburger .hamburger-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+
+// бургер на 1210 px
+@media (max-width: 1210px) {
+  .navbar__img {
+    width: 40vw;
+  }
+
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: $light-pink;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-top: 40px;
+  }
+
+  .menu .menu__list a {
+    color: $fuchsia;
+    display: block;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    padding: 20px 0;
+  }
+
+  #checkbox_toggle:checked ~ .menu {
+    display: block;
+    max-height: 700px;
     transition: all 0.5s;
   }
 
