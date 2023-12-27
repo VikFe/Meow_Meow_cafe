@@ -27,7 +27,6 @@ $green: #98b08c;
 // Fonts
 $main-font: "Montserrat", sans-serif;
 $main-size: 20px;
-$main-size: 36px;
 $padding: 1vh;
 
 /*Screen sizes*/
@@ -265,6 +264,7 @@ body {
   flex-direction: row;
   justify-content: center;
   font-family: $main-font;
+  padding-bottom: 15px;
   color: $fuchsia;
 }
 
@@ -408,7 +408,7 @@ body {
     // border: red solid 1px;
     width: 790px;
     line-height: 30px;
-    font-size: 20px;
+    font-size: $main-size;
     padding: 0px 10px 25px 10px;
   }
 }
@@ -488,7 +488,7 @@ body {
   color: $graphite;
   padding: 15px;
   font-family: $main-font;
-  font-size: $main-size;
+  font-size: 35px;
 }
 
 .rules_list {
@@ -813,12 +813,13 @@ body {
 .certificate__title {
   padding: $padding;
   font-family: $main-font;
-  font-size: $main-size;
+  font-size: 30px;
   color: $graphite;
 }
 
 .certificate__text {
   font-family: $main-font;
+  font-size: $main-size;
   padding-top: 3vh;
   color: $graphite;
 }
@@ -849,7 +850,7 @@ body {
 
 .shelters__title {
   color: $graphite;
-  font-family: $main-font;
+  font-family: 30px;
   padding: 2vh;
   font-size: $main-size;
 }

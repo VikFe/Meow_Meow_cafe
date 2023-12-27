@@ -237,6 +237,7 @@ body {
   flex-direction: row;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 15px;
   color: #a7275a;
 }
 
@@ -423,7 +424,7 @@ body {
   padding-top: 30px;
   padding: 50px;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_header {
@@ -438,7 +439,7 @@ body {
   color: #262626;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 35px;
 }
 
 .rules_list {
@@ -461,7 +462,7 @@ body {
   padding: 5px;
   font-family: "Montserrat", sans-serif;
   color: #262626;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_img {
@@ -529,7 +530,7 @@ body {
   padding-top: 30px;
   padding: 50px;
   text-align: center;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_header {
@@ -544,7 +545,7 @@ body {
   color: #262626;
   padding: 15px;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_list {
@@ -567,7 +568,7 @@ body {
   padding: 5px;
   font-family: "Montserrat", sans-serif;
   color: #262626;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .rules_img {
@@ -739,12 +740,13 @@ body {
 .certificate__title {
   padding: 1vh;
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
+  font-size: 30px;
   color: #262626;
 }
 
 .certificate__text {
   font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   padding-top: 3vh;
   color: #262626;
 }
@@ -775,9 +777,9 @@ body {
 
 .shelters__title {
   color: #262626;
-  font-family: "Montserrat", sans-serif;
+  font-family: 30px;
   padding: 2vh;
-  font-size: 36px;
+  font-size: 20px;
 }
 
 .shelters__text {
