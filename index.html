@@ -8,6 +8,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/style/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
 	<link rel="icon" href="./assets/images/paws-icon.png" type="image" />
 	<title>Мяу Мяу Кафе</title>
 
@@ -281,33 +283,35 @@
 		</section>
 
 		<!-- Отзывы из яндекс -->
-		<!-- <div style="divreview"> -->
-		<!-- <section class="reviews"> -->
+
 		<div class="reviews_form" id="reviews">
-			<iframe class="iframeclass" src="https://yandex.ru/maps-reviews-widget/64554521707?comments" width="50%"
+			<iframe class="iframeclass" src="https://yandex.ru/maps-reviews-widget/64554521707?comments" width="750px"
 				height="500" frameborder="0"></iframe>
 		</div>
 
 
 		<!-- Подписка на новостную рассылку -->
-		<div class="subscribe" id="feedback">
-			<h2 class="subscribe__title">Новости от котиков</h2>
-			<p class="subscribe__copy">Если хотите первыми узнавать информацию, то подпишитесь на наши новости</p>
-			<div class="form">
-				<input type="surname" class="form__surname" placeholder="Фамилия" />
-				<input type="name" class="form__name" placeholder="Имя" />
-				<input type="email" class="form__email" placeholder="Адрес электронной почты" />
-				<button class="form__button">Отправить</button>
-			</div>
+		<section class="news">
+			<div class="subscribe" id="feedback">
+				<h2 class="subscribe__title">Новости от котиков</h2>
+				<p class="subscribe__copy">Если хотите первыми узнавать информацию, то подпишитесь на наши новости
+				</p>
+				<div class="form">
+					<input type="surname" class="form__surname" placeholder="Фамилия" />
+					<input type="name" class="form__name" placeholder="Имя" />
+					<input type="email" class="form__email" placeholder="Электронная почта" />
+					<button class="form__button">Отправить</button>
+				</div>
 
-			<div class="notice">
-				<input type="checkbox">
-				<span class="notice__copy"> Я даю согласие на информационную рассылку, обработку и хранение
-					персональных
-					данных.</span>
+				<div class="notice">
+					<input type="checkbox">
+					<span class="notice__copy"> Я даю согласие на информационную рассылку, обработку и хранение
+						персональных
+						данных.</span>
+				</div>
 			</div>
-		</div>
-		<!-- </section></div> -->
+		</section>
+
 		<!-- Секция Карта и контакты начало -->
 		<section class="contacts" id="contacts">
 			<iframe class="contacts__map-yandex"
@@ -322,12 +326,12 @@
 				</p>
 
 				<p class="contact__text">
-					<span class="contact__title">Телефон администратора:</span>
+					<span class="contact__title">Администратор:</span>
 					<a class="contact__phone" href="tel:+79114687656" target="_blank">+7 (911) 468-76-56</a>
 				</p>
 
 				<p class="contact__text">
-					<span class="contact__title">Телефон для сотрудничества:</span>
+					<span class="contact__title">Сотрудничество:</span>
 					<a class="contact__phone" href="tel:+79123332570" target="_blank">+7 (912) 333-25-70</a>
 				</p>
 
